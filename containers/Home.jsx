@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
-import { Counter, Navigation, Todoinput, Footer } from "../compornents"
-
+import {Login, SignUp, Counter, Navigation,Footer } from "../compornents"
+import {Schedule} from "../containers"
 const Home = () =>{
     return (<>
         <table style={{ width: "1200px", height: "550px", margin: "0 auto", border: "1px solid black"}}>
@@ -17,7 +17,9 @@ const Home = () =>{
                     <Routes>
                         <Route path="/counter" element={<Counter/>} ></Route>
                         <Route path="/home" element={<h3>스케줄러</h3>} ></Route>
-                        <Route path="/todos" element={<Todoinput/>} ></Route>
+                        <Route path="/todos" element={<Schedule/>} ></Route>
+                        <Route path="/signup" element={<SignUp/>} ></Route>
+                        <Route path="/login" element={<Login/>} ></Route> 
                     </Routes>
                     </td>
                 </tr>
