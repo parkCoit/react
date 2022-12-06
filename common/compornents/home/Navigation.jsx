@@ -5,8 +5,8 @@ const Navigation = () =><nav>
         <li><Link to = "/home">Home</Link> </li>
         <li><Link to = "/counter">Counter</Link> </li>
         <li><Link to = "/todos">Todos</Link> </li>
-        <li><Link to = "/signup">Sign UP</Link> </li>
-        <li><Link to = "/login">Login</Link> </li>
+        <li><Link to = "/auth/signup">Sign UP</Link> </li>
+        <li><Link to = "/auth/login">Login</Link> </li>
     </ul>
 
 </nav>

@@ -1,5 +1,5 @@
 
-import {TodoInput, TodoList} from "../compornents"
+import {TodoInput, TodoList} from "todos"
 const Schedule = () => {
     return <>
         <TodoInput/>

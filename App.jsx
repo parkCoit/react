@@ -1,8 +1,11 @@
-import {Home} from "./containers"
+
+import { Home } from "./common"
+import {LoginForm} from "uat"
 
 const App = () =>{
   return (<>
   <Home/>
+  <LoginForm/>
     
   </>)
 }
