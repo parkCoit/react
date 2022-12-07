@@ -1,9 +1,10 @@
 // compornents
 
-export {default as TodoInput} from "todos/compornents/TodoInput"
+export {default as AddTodo} from "todos/compornents/AddTodo"
 
 export {default as TodoList} from "todos/compornents/TodoList"
 
+export {default as Todo} from "todos/compornents/Todo"
 
 // containers
 

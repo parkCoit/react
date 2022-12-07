@@ -2,6 +2,8 @@ import { Route, Routes } from "react-router-dom"
 import {Counter, Navigation,Footer } from "common"
 import {Login, SignUp} from "uat"
 import {Schedule} from "../../todos"
+import dog from 'images/dog.jpg'
+
 const Home = () =>{
     return (<>
         <table style={{ width: "1200px", height: "550px", margin: "0 auto", border: "1px solid black"}}>
@@ -22,9 +24,20 @@ const Home = () =>{
                         <Route path="/auth/signup" element={<SignUp/>} ></Route>
                         <Route path="/auth/login" element={<Login/>} ></Route> 
                     </Routes>
+                    
                     </td>
                 </tr>
-                <Footer/>
+                
+                <tr>
+                    <td>
+                        <img src={dog} alt='개'/>
+                    </td>
+                </tr>
+                <tr style={{ width: "100%", height: "20%", border: "1px solid black"}}>
+                    <td style={{ width: "100%", border: "1px solid black"}}>
+                        <Footer/>
+                    </td>
+                </tr>
             </tbody>
         </table>
     

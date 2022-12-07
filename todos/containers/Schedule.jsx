@@ -1,8 +1,8 @@
 
-import {TodoInput, TodoList} from "todos"
+import { AddTodo, TodoList} from "todos"
 const Schedule = () => {
     return <>
-        <TodoInput/>
+        <AddTodo/>
         <TodoList/>
     </>
 }
