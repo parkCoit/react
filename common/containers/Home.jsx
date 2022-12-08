@@ -2,9 +2,12 @@ import { Route, Routes } from "react-router-dom"
 import {Counter, Navigation,Footer } from "common"
 import {Login, SignUp} from "uat"
 import {Schedule} from "../../todos"
-import dog from 'images/dog.jpg'
+
+import fashion from 'images/fashion.png'
+
 
 const Home = () =>{
+    const imgSize = {minWidth: 500, minHeight : 600}
     return (<>
         <table style={{ width: "1200px", height: "550px", margin: "0 auto", border: "1px solid black"}}>
             <thead>
@@ -30,7 +33,7 @@ const Home = () =>{
                 
                 <tr>
                     <td>
-                        <img src={dog} alt='개'/>
+                        <img  src={fashion} alt='개' className={imgSize}/>
                     </td>
                 </tr>
                 <tr style={{ width: "100%", height: "20%", border: "1px solid black"}}>
