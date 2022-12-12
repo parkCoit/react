@@ -1,7 +1,8 @@
 import { Route, Routes } from "react-router-dom"
-import {Counter, Navigation,Footer } from "common"
+import {Counter, Footer, Navigation2 } from "common"
 import {Login, SignUp} from "uat"
 import {Schedule} from "../../todos"
+import {Stroke} from "blog"
 
 import fashion from 'images/fashion.png'
 
@@ -13,7 +14,7 @@ const Home = () =>{
             <thead>
                 <tr style={{ width: "20%",height: "80%",  border: "1px solid black"}}>
                     <td style={{ width: "100%", border: "1px solid black"}}>
-                    <Navigation/>
+                    <Navigation2/>
                     </td>
                 </tr>
                 </thead>
@@ -25,7 +26,8 @@ const Home = () =>{
                         <Route path="/home" element={<h3>스케줄러</h3>} ></Route>
                         <Route path="/todos" element={<Schedule/>} ></Route>
                         <Route path="/auth/signup" element={<SignUp/>} ></Route>
-                        <Route path="/auth/login" element={<Login/>} ></Route> 
+                        <Route path="/auth/login" element={<Login/>} ></Route>
+                        <Route path="/stroke" element={<Stroke/>} ></Route>
                     </Routes>
                     
                     </td>
