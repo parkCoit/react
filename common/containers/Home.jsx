@@ -3,6 +3,7 @@ import {Counter, Footer, Navigation2 } from "common"
 import {Login, SignUp} from "uat"
 import {Schedule} from "../../todos"
 import {Stroke} from "blog"
+import {Iris} from "shop"
 
 import fashion from 'images/fashion.png'
 
@@ -28,6 +29,7 @@ const Home = () =>{
                         <Route path="/auth/signup" element={<SignUp/>} ></Route>
                         <Route path="/auth/login" element={<Login/>} ></Route>
                         <Route path="/stroke" element={<Stroke/>} ></Route>
+                        <Route path="/iris" element={<Iris/>} ></Route>
                     </Routes>
                     
                     </td>

@@ -1,6 +1,4 @@
 
-import { useState } from "react"
-import { Doughnut } from 'react-chartjs-2'
 import "uat/style/Login.css"
 import {stroke} from 'blog/api'
 
@@ -15,12 +13,12 @@ const Stroke = () =>{
         })
         .catch((err)=>{
             console.log(err)
-            alert('아이디와 비밀번호를 다시입력')
+            alert('에러')
         })
     }
 
     return(<>
-        <button onClick={onClick}> 로그인 </button>
+        <button onClick={onClick}> Stroke </button>
     </>)
 }
 
