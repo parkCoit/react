@@ -1,6 +1,6 @@
 
 import "uat/style/Login.css"
-import {stroke} from 'blog/api'
+import {stroke} from 'stroke/api'
 
 const Stroke = () =>{
 

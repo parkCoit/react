@@ -1,6 +1,6 @@
 import { useState } from "react"
 import "uat/style/Login.css"
-import {iris} from 'shop/api'
+import {iris} from 'iris/api'
 
 const Stroke = () =>{
 
@@ -18,10 +18,12 @@ const Stroke = () =>{
         e.preventDefault()
         const request = {SepalLengthCm, SepalWidthCm,
             PetalLengthCm, PetalWidthCm}
+        alert(`정보 : ${JSON.stringify(request)}`)
         iris(request)
-        .then((res) => {
-            console.log(`response is ${res.config.data}`)
-            localStorage.setItem('token', JSON.stringify(res.config.data))
+        .then((response) => {
+            console.log(`response is ${response.data.result}`)
+            localStorage.setItem('token', JSON.stringify(response.data.result))
+            alert(`정보 : ${JSON.stringify(response.data.result)}`)
             
         })
         .catch((err)=>{

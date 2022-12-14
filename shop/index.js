@@ -1,1 +1,0 @@
-export {default as Iris} from 'shop/compornents/Iris'
